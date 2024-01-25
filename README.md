@@ -2,16 +2,19 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Basic Project Template</h1>
+    <h1 align="center">Yii 2 Basic Online Course Management</h1>
     <br>
 </p>
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+
+Приложение используется для обучения в рамках одного курса (то есть не надо делать сущности курсов, модулей и тд, только уроки). В приложении имеются уроки, которые пользователь может проходить.
+
+Пользователь логинится, попадает на главную страницу, на которой видит список уроков курса. Те, которые уже пройдены, отмечены зеленой галочкой. Пользователь может нажать на урок из списка и ему откроется страница урока, на которой есть заголовок урока, описание урока, видео из YouTube. После того, как пользователь посмотрел урок, он нажимает под видео кнопку "урок просмотрен". В этот момент пользователю засчитывается прохождение этого урока и открывается следующий для просмотра (реализовать с помощью ajax).
+После нажатия на эту кнопку пользователя возвращает на общий список уроков, где он может выбрать и пройти другой урок. Когда пользователь прошел все уроки курса, то на странице уроков над ними виден отдельный блок с надписью о пройденном курсе (а все уроки отмечены галочками).
+
+Внешний вид страниц необходимо реализовать простой, с помощью стандартных средств bootstrap на свое усмотрение.
+
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
